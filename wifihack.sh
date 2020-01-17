@@ -50,7 +50,15 @@ check_wifi_adapter()
 		exit 0
 	fi
 }
-
+check_wifi_adapter_man()
+	{
+	if [ -z "$check" ];then
+		echo -e "${red}[-] ${nc}Wireless device not found!!"
+		echo -e "${red}[-] ${nc}Please check your wireless Device!!!"
+		echo -e "${red}[-] ${nc}Can't find Your interface. Please make sure wireless adapter connected or not!!!"
+		exit 0
+	fi	
+	}
 echo -e "${yellow}[+] ${nc}Choose interface Deduction Method"
 echo -e "${yellow}1.${blue}Auto Deduct\n${yellow}2.${blue}Manual${nc}"
 echo -e "${red}>>${nc}"
