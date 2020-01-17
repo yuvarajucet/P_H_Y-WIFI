@@ -179,7 +179,7 @@ elif [ $option == "2" ];then
 		#-----------------------------------------------------------------------
 		#check if wifi-adapter connected or not
 #-----------------------------------------------------------------------
-		iwconfig $inter || iwconfig ${inter}mon || check_wifi_adapter
+		iwconfig $inter || iwconfig ${inter}mon || check_wifi_adapter_man
 		
 		airmon-ng check kill  | sleep 3 | clear
 		banner
