@@ -253,15 +253,19 @@ elif [ $option == "2" ];then
 #-----------------------------------------------------------------------
 				#Cracking the password using password list
 #-----------------------------------------------------------------------
-
-		echo -e "${yellow}Password file Path${red}:>>${nc}" 
-		read passpath
-		echo -e "${yellow}Cap file path${red}:>>${nc}"
-		read file
+		echo -e "${yellow}[+] ${nc}Open new terminal or new tab"
+		echo -e "${yellow}[+] ${nc}Follow this command"
+		echo -e "${yellow}[+] ${blue}aircrack-ng ${yellow} <<capfile path>> ${blue} -w ${yellow} <<password file path>>"
+		echo -e "${yellow}[+] ${red}Example: ${blue} aircrack-ng ${yellow}/root/Desktop/capfile.cap ${blue} -w ${yellow} /root/Desktop/passwordfile.txt"
+		
+#echo -e "${yellow}Password file Path${red}:>>${nc}" 
+#read passpath
+#echo -e "${yellow}Cap file path${red}:>>${nc}"
+#read file
 #-----------------------------------------------------------------------
 		#Cracking the password by brutefource method
 #-----------------------------------------------------------------------
-		aircrack-ng $file -w $passpath
+#		aircrack-ng $file -w $passpath
 		
 	}
 
