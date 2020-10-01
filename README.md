@@ -9,5 +9,9 @@ cd P_H_Y-WIFI
 chmod +x *
 ```
 
+```
+./wifihack.sh
+```
+
 <h1>Watch Demo in youtube</h1>
 <h2>https://www.youtube.com/watch?v=5qyTVpJ-16I</h2>
